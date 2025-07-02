@@ -1,0 +1,69 @@
+
+/* styles/layout.css */
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  grid-area: header;
+  background: #444;
+  color: #fff;
+  padding: 1.5rem 2rem 0.5rem 2rem;
+  font-size: 2rem;
+}
+
+.header-content {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #000;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+aside {
+  grid-area: aside;
+  background: #fff;
+  color: #222;
+  font-size: 2rem;
+  padding: 2rem;
+  border-right: 1px solid #ccc;
+}
+
+main {
+  grid-area: main;
+  background: #ccc;
+  color: #222;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+footer {
+  grid-area: footer;
+  background: #444;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+}
