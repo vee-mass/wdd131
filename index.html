@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Victoria Massela</title>
+    <meta name="description"content="I am Victoria Massela and this my WDD 131 – Dynamic Web Fundamentals summary of the page content">
+    <meta name="author" content="Victoria Massela">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <p>WDD130 VICTORIA MASSELA</p>
+   <header>
+        <p><span id="coursetitle">WDD 131 – Dynamic Web Fundamentals</span></p> 
+        <nav>
+            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">LinkedIn</a>
+            <a href="https://byupw.instructure.com/.">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+            <a href="finalproject">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Victoria Massela</h1>
+
+        <div class="main-layout-grid"> 
+            <section class="card about-me"> 
+                <h2>About Me</h2>
+                <img src="images/victoria.jpg" alt="An image of the autor." class="profile-img">
+                <p>My name is Victoria Massela, I was born and raised in South
+                    Africa where I stil reside. I am a BYU online student. Some of
+                    ny hobbies include cooking, baking, pilates, hiking, programming 
+                    and I am trying to get back into reading. I would love to travel 
+                    when I have the means to.
+                </p>
+                <div class="flag-info"> 
+                    <img src="images/south-africa.png" alt="The South African flag." class="flag-img">
+                    <p>
+                        South Africa is the adventure capital of the world. With over 130 
+                        adventures and counting, there is something for everyone from mountain 
+                        walks to shark cage-diving! In sunny South Africa, our great weather invites
+                        you to enjoy the outdoors, play golf year-round and take advantage of the nearly 3000km coastline…
+                    </p>
+                </div>
+            </section>
+
+            <section class="card web-dev-resources"> 
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://dev.to/">Dev Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/?utm_source=aff-campaign&utm_medium=udemyads&LSNPUBID=wizKxmN8no4&ranMID=47907&ranEAID=wizKxmN8no4&ranSiteID=wizKxmN8no4-HELvUDKNwrgnsnGFyQBGcA&gad_source=1&gad_campaignid=22388734312&gbraid=0AAAAApACmIOu4SWmKQZ982YkDZBEaAJsu&gclid=Cj0KCQjw1JjDBhDjARIsABlM2St5cmQ2K5Q75_3jgafURnFTPO88d_BTKn7mhIaOFb0psJnwcaKN-XkaAiGoEALw_wcB">Udemy</a></li>
+                    <li><a href="https://placehold.co/">Placehold</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+           &copy; <span id="currentyear"></span> Victoria South Africa
+        </p>
+        <p>
+            Last Modified: <span id="lastmodified"></span>
+        </p>
+   </footer>
+   <script src="scripts/main.js"></script> 
 </body>
 </html>
