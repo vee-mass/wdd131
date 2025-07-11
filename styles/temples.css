@@ -35,15 +35,9 @@ nav ul {
     color: black;
 }
 
-nav a:hover {
-    text-decoration: underline;
-    background-color: rgb(197, 174, 143);
-    color: rgb(149, 111, 53);
-}
-
 main {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .figs {
@@ -53,9 +47,9 @@ main {
 }
 
 @media (max-width: 600px) {
-.figs {
+  .figs {
     grid-template-columns:  1fr;
-}
+  }
 }
 
 figure {
@@ -75,17 +69,17 @@ figure img {
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
-h1 {
-    font-size: 400;
-    text-align: center;
+h2 {
+  font-size: 30px;
+  text-align: center;
 }
 
-h2 { 
-    font-size: 70px;
+h1 { 
+  font-size: 70px;
 }
 
 .nav-menu {
@@ -97,11 +91,17 @@ h2 {
 }
 
 .nav-menu li a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: bold;
 }
 
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgb(197, 174, 143);
+    color: rgb(149, 111, 53);
+}
 .hamburger {
   display: none;
   font-size: 28px;
