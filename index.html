@@ -20,45 +20,47 @@
             <a href="finalproject">Final Project</a>
         </nav>
     </header>
+    
     <main>
         <h1>Victoria Massela</h1>
+        <div class="hero-container">
+            <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 700px)" />
+            <img src="images/hero-small.webp" alt="Lemur in Madagascar" />
+            </picture>
 
-        <div class="main-layout-grid"> 
-            <section class="card about-me"> 
-                <h2>About Me</h2>
-                <img src="images/victoria.jpg" alt="An image of the autor." class="profile-img">
-                <p>My name is Victoria Massela, I was born and raised in South
-                    Africa where I stil reside. I am a BYU online student. Some of
-                    ny hobbies include cooking, baking, pilates, hiking, programming 
-                    and I am trying to get back into reading. I would love to travel 
-                    when I have the means to.
-                </p>
-                <div class="flag-info"> 
-                    <img src="images/south-africa.png" alt="The South African flag." class="flag-img">
-                    <p>
-                        South Africa is the adventure capital of the world. With over 130 
-                        adventures and counting, there is something for everyone from mountain 
-                        walks to shark cage-diving! In sunny South Africa, our great weather invites
-                        you to enjoy the outdoors, play golf year-round and take advantage of the nearly 3000km coastline…
-                    </p>
-                </div>
+            <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 587,041 sq km</li>
+                <li><strong>Population:</strong> 27,691,018</li>
+                <li><strong>Capital:</strong> Antananarivo</li>
+                <li><strong>Languages:</strong> Malagasy, French</li>
+                <li><strong>Currency:</strong> Malagasy Ariary</li>
+                <li><strong>Time Zone:</strong> UTC+3</li>
+                <li><strong>Calling Code:</strong> +261</li>
+                <li><strong>Internet TLD:</strong> .mg</li>
+            </ul>
             </section>
 
-            <section class="card web-dev-resources"> 
-                <h2>Web Dev Resources</h2>
-                <ul>
-                    <li><a href="https://dev.to/">Dev Community</a></li>
-                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                    <li><a href="https://www.udemy.com/?utm_source=aff-campaign&utm_medium=udemyads&LSNPUBID=wizKxmN8no4&ranMID=47907&ranEAID=wizKxmN8no4&ranSiteID=wizKxmN8no4-HELvUDKNwrgnsnGFyQBGcA&gad_source=1&gad_campaignid=22388734312&gbraid=0AAAAApACmIOu4SWmKQZ982YkDZBEaAJsu&gclid=Cj0KCQjw1JjDBhDjARIsABlM2St5cmQ2K5Q75_3jgafURnFTPO88d_BTKn7mhIaOFb0psJnwcaKN-XkaAiGoEALw_wcB">Udemy</a></li>
-                    <li><a href="https://placehold.co/">Placehold</a></li>
-                </ul>
+            <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon" />
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">10</span>°C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> <span id="speed">5</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="chill">N/A</span></li>
+            </ul>
             </section>
         </div>
-    </main>
+</main>
 
-    <footer>
+
+
+
+
+    
         <p>
            &copy; <span id="currentyear"></span> Victoria South Africa
         </p>

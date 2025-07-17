@@ -1,0 +1,149 @@
+:root {
+  --main-red: #d62828;
+  --main-green: #007f5f;
+  --text-dark: #1a1a1a;
+  --bg-light: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: var(--text-dark);
+  background-color: #f0fff0;
+}
+
+header {
+  background-color: var(--main-red);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+  background-color: var(--bg-light);
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.data h2,
+.weather h2 {
+  margin-top: 0;
+  color: var(--main-green);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  background-color: var(--main-red);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Pseudo-element weather icon in wide view */
+@media (min-width: 700px) {
+  .weather h2::after {
+    content: " ⛅";
+  }
+
+  main {
+    display: grid;
+    grid-template-areas:
+      "data weather"
+      "footer footer";
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  picture {
+    grid-column: 1 / -1;
+  }
+
+  .data {
+    grid-area: data;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .weather {
+    grid-area: weather;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  .weather-icon {
+    display: none;
+  }
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+}
+
+.hero-container picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 700px) {
+  .data,
+  .weather {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .data {
+    top: 50%;
+    left: 5%;
+  }
+
+  .weather {
+    bottom: -250px;
+    right: 5%;
+  }
+
+  main {
+    display: block;
+  }
+}
+
+.data h2,
+.weather h2 {
+  display: inline-block;
+  background-color: var(--main-green);
+  color: white;
+  padding: 0.3em 0.7em;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+
+
