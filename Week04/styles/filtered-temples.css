@@ -1,0 +1,139 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    color: black;
+    font-family: "Roboto", 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: burlywood;
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+    color: black;
+}
+
+nav ul {
+    color: black;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.figs {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@media (max-width: 600px) {
+  .figs {
+    grid-template-columns:  1fr;
+  }
+}
+
+figure {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+figure img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h1 { 
+  font-size: 70px;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  gap: 20px;
+}
+
+.nav-menu li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgb(197, 174, 143);
+    color: rgb(149, 111, 53);
+}
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* hide menu by default on mobile */
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px; /* adjust based on header height */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  .nav-menu.show {
+    display: flex; /* show menu when toggled */
+  }
+  
+  .nav-menu li {
+    padding: 10px 20px;
+  }
+  
+  .hamburger {
+    display: block; /* show hamburger on mobile */
+  }
+}
