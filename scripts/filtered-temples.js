@@ -70,18 +70,21 @@ const temples = [
     templeName: "Adelaide Austrailia",
     location: "Marden, South Australia, Australia",
     dedicated: "2000, June, 15",
+    area: 343554,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/adelaide-australia/400x250/adelaide-australia-temple-lds-856093-wallpaper.jpg",
   },
   {
     templeName: "Seoul Korea Temple",
     location: "Seoul, Seoul-teukbyeolsi, South Korea",
     dedicated: "1985, December, 14",
+    area: 223456,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/400x250/seoul-korea-temple-lds-424784-wallpaper.jpg",
   },
   {
     templeName: "Belem Brazil Temple",
     location: "Belém, Para, Brazil",
     dedicated: "2022, November, 20",
+    area: 112334,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/belem-brazil/400x250/belem_brazil_temple_exterior.jpg",
   },
 ];
