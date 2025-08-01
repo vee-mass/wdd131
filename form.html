@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="This is the ptoduct review page.">
+    <meta name="author" content="Victoria Massela">
+    <link rel="stylesheet" href="styles/product-review.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="scripts/product-review.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <p id="reviewCountDisplay"></p>
+
+        <h1>Product Review Form</h1>
+        <form method="get" action="review.html" id="reviewForm">
+            <label for="productName">Product Name <span aria-label="required">*</span></label>
+            <select id="productName" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset>
+            <legend>Overall Rating <span aria-label="required">*</span></legend>
+
+            <label for="rate1">
+                <input type="radio" id="rate1" name="overallRating" value="1" required>
+                1 Star
+            </label>
+
+            <label for="rate2">
+                <input type="radio" id="rate2" name="overallRating" value="2">
+                2 Stars
+            </label>
+
+            <label for="rate3">
+                <input type="radio" id="rate3" name="overallRating" value="3">
+                3 Stars
+            </label>
+
+            <label for="rate4">
+                <input type="radio" id="rate4" name="overallRating" value="4">
+                4 Stars
+            </label>
+
+            <label for="rate5">
+                <input type="radio" id="rate5" name="overallRating" value="5">
+                5 Stars
+            </label>
+            </fieldset>
+
+            <label for="installDate">Date of Installation <span aria-label="required">*</span></label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <fieldset>
+            <legend>Useful Features (check all that apply)</legend>
+
+            <label for="feature1">
+                <input type="checkbox" id="feature1" name="usefulFeatures" value="Easly Installed">
+                Easily Installed
+            </label>
+
+            <label for="feature2">
+                <input type="checkbox" id="feature2" name="usefulFeatures" value="Energy Efficient">
+                Energy Efficient
+            </label>
+
+            <label for="feature3">
+                <input type="checkbox" id="feature3" name="usefulFeatures" value="Affordable Price">
+                Affordable Price
+            </label>
+            </fieldset>
+
+            <label for="writtenReview">Written Review</label>
+            <textarea id="writtenReview" name="writtenReview" rows="5" cols="33" placeholder="Write your review here..."></textarea>
+
+            <label for="userName">Your Name (optional)</label>
+            <input type="text" id="userName" name="userName">
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
