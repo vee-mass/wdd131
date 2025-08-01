@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Product Review Form</title>
-    <meta name="description" content="This is the product review page." />
+    <meta name="description" content="Product review submission form." />
     <meta name="author" content="Victoria Massela" />
-    <link rel="stylesheet" href="styles/product-review.css" />
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles/product-review.css" />
+
     <script src="scripts/product-review.js" defer></script>
 </head>
 <body>
@@ -19,17 +22,17 @@
         <p id="reviewCountDisplay"></p>
 
         <h2>Product Review Form</h2>
-        <form method="get" action="review.html" id="reviewForm">
-            <label for="productName">
-                Product Name <span aria-label="required" style="color: #e74c3c;">*</span>
+        <form method="get" action="review.html" id="reviewForm" novalidate>
+            <label for="productName" class="required-label">
+                Product Name <span aria-label="required" class="required-asterisk">*</span>
             </label>
             <select id="productName" name="productName" required>
                 <option value="" disabled selected>Select a Product ...</option>
             </select>
 
             <fieldset>
-                <legend>
-                    Overall Rating <span aria-label="required" style="color: #e74c3c;">*</span>
+                <legend class="required-label">
+                    Overall Rating <span aria-label="required" class="required-asterisk">*</span>
                 </legend>
 
                 <label for="rate1">
@@ -54,8 +57,8 @@
                 </label>
             </fieldset>
 
-            <label for="installDate">
-                Date of Installation <span aria-label="required" style="color: #e74c3c;">*</span>
+            <label for="installDate" class="required-label">
+                Date of Installation <span aria-label="required" class="required-asterisk">*</span>
             </label>
             <input type="date" id="installDate" name="installDate" required />
 
@@ -63,22 +66,22 @@
                 <legend>Useful Features (check all that apply)</legend>
 
                 <label for="feature1">
-                    <input type="checkbox" id="feature1" name="usefulFeatures" value="Easily Installed" />
+                    <input type="checkbox" id="feature1" name="usefulFeatures" value="Easily Installed"/>
                     Easily Installed
                 </label>
 
                 <label for="feature2">
-                    <input type="checkbox" id="feature2" name="usefulFeatures" value="Energy Efficient" />
+                    <input type="checkbox" id="feature2" name="usefulFeatures" value="Energy Efficient"/>
                     Energy Efficient
                 </label>
 
                 <label for="feature3">
-                    <input type="checkbox" id="feature3" name="usefulFeatures" value="Affordable Price" />
+                    <input type="checkbox" id="feature3" name="usefulFeatures" value="Affordable Price"/>
                     Affordable Price
                 </label>
 
                 <label for="feature4">
-                    <input type="checkbox" id="feature4" name="usefulFeatures" value="High Durability" />
+                    <input type="checkbox" id="feature4" name="usefulFeatures" value="High Durability"/>
                     High Durability
                 </label>
             </fieldset>
@@ -93,9 +96,9 @@
             ></textarea>
 
             <label for="userName">Your Name (optional)</label>
-            <input type="text" id="userName" name="userName" />
+            <input type="text" id="userName" name="userName"/>
 
-            <input type="submit" value="Semd My Product Review" />
+            <input type="submit" value="Send My Review"/>
         </form>
     </main>
 
