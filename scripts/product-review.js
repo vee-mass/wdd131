@@ -1,11 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
-  let reviewCount = localStorage.getItem('reviewCount');
-  reviewCount = reviewCount ? parseInt(reviewCount, 10) : 0;
-  reviewCount++;
-  localStorage.setItem('reviewCount', reviewCount);
+const products = [
+  { id: "prod1", name: "SuperWidget" },
+  { id: "prod2", name: "MegaGadget" },
+  { id: "prod3", name: "UltraTool" },
+  { id: "prod4", name: "HyperDevice" }
+];
 
-  const countDisplay = document.getElementById('reviewCountDisplay');
-  if (countDisplay) {
-    countDisplay.textContent = `Number of reviews submitted: ${reviewCount}`;
-  }
-});
+function populateProductOptions() {
+  const select = document.getElementById('productName');
+
+  products.forEach(product => {
+    const option = document.createElement('option');
+    option.value = product.id;  
+    option.textContent = product.name; 
+    select.appendChild(option);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', populateProductOptions);
